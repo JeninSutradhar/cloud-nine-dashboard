@@ -62,7 +62,7 @@ export default function Index() {
               <ShieldCheck className="h-4 w-4 text-muted-foreground" /> Security
             </span>
           }
-          bodyClassName="grid grid-cols-2 gap-4"
+          bodyClassName="grid grid-cols-2 gap-0 p-0"
         >
           <MetricCard
             label="Security insights"
@@ -83,7 +83,7 @@ export default function Index() {
               <Gauge className="h-4 w-4 text-muted-foreground" /> Performance
             </span>
           }
-          bodyClassName="grid grid-cols-2 gap-4"
+          bodyClassName="grid grid-cols-2 gap-0 p-0"
         >
           <MetricCard
             label="Cache rate"
@@ -105,7 +105,7 @@ export default function Index() {
               <Activity className="h-4 w-4 text-muted-foreground" /> Activity
             </span>
           }
-          bodyClassName="grid grid-cols-2 gap-4"
+          bodyClassName="grid grid-cols-2 gap-0 p-0"
         >
           <MetricCard
             label="Web traffic"
@@ -128,7 +128,7 @@ export default function Index() {
           title={
             <span className="flex items-center gap-2">
               Domains
-              <span className="rounded-md bg-surface-muted px-1.5 py-0.5 text-[11px] font-medium text-muted-foreground">
+              <span className="inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-md bg-surface-muted px-1.5 text-[11px] font-medium text-muted-foreground">
                 1
               </span>
             </span>
@@ -150,9 +150,9 @@ export default function Index() {
         >
           <div className="flex items-center justify-between gap-3 px-4 py-3">
             <div className="flex items-center gap-2">
-              <Pill tone="success" className="h-5 w-5 justify-center px-0">
-                <Check className="h-3 w-3" />
-              </Pill>
+              <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-full border-[1.5px] border-success text-success">
+                <Check className="h-2.5 w-2.5" strokeWidth={3} />
+              </span>
               <a href="#" className="text-[13px] font-medium text-foreground hover:underline">
                 example.domain
               </a>
