@@ -50,7 +50,7 @@ const protect: Item[] = [
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="px-3 pt-5 pb-1.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground/80">
+    <div className="px-3 pt-5 pb-1.5 text-[11px] font-medium tracking-wide text-muted-foreground/70">
       {children}
     </div>
   );
@@ -64,12 +64,12 @@ function NavRow({ item }: { item: Item }) {
       <button
         onClick={() => item.expandable && setOpen((v) => !v)}
         className={cn(
-          "group flex w-full items-center gap-2.5 rounded-md px-3 py-1.5 text-[13px] font-medium text-sidebar-foreground transition-colors",
+          "group flex w-full items-center gap-2.5 rounded-md px-3 py-1.5 text-[13px] font-normal text-sidebar-foreground transition-colors",
           "hover:bg-sidebar-accent",
-          item.active && "bg-sidebar-accent text-foreground",
+          item.active && "bg-sidebar-accent font-medium text-foreground",
         )}
       >
-        {Icon && <Icon className="h-4 w-4 shrink-0 text-muted-foreground" />}
+        {Icon && <Icon className="h-4 w-4 shrink-0 stroke-[1.5] text-muted-foreground" />}
         <span className="flex-1 text-left">{item.label}</span>
         {item.expandable &&
           (open ? (
