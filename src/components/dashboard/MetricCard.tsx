@@ -18,7 +18,7 @@ export function MetricCard({ label, value, delta, sub, spark }: Props) {
         <Info className="h-3 w-3" />
       </div>
       <div className="mt-1 flex items-baseline gap-2">
-        <span className="text-[26px] font-semibold leading-none tracking-tight text-foreground">
+        <span className="text-[26px] font-bold leading-none tracking-tight text-foreground">
           {value}
         </span>
         {delta && (
